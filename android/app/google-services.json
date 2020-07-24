@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "230579858642",
+    "firebase_url": "https://f-salon-app-aakash.firebaseio.com",
+    "project_id": "f-salon-app-aakash",
+    "storage_bucket": "f-salon-app-aakash.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:230579858642:android:6c5de3be924082dc9ed10b",
+        "android_client_info": {
+          "package_name": "com.example.fsalonappaakash"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "230579858642-2b9od2i3cnlpcnoj8p0626t02djohmth.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.fsalonappaakash",
+            "certificate_hash": "62c3265a9e83d671b9e8110ee24c47eab7d0c6d1"
+          }
+        },
+        {
+          "client_id": "230579858642-u8de00riudfi4f5t61b1vle86t0od94s.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCVrJBNPtxwDXDh4WMOunDyBKC_2zLlLgo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "230579858642-u8de00riudfi4f5t61b1vle86t0od94s.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
