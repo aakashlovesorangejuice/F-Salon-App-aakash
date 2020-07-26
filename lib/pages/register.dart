@@ -80,7 +80,7 @@ class _RegisterState extends State<Register> {
                             Navigator.push(
                                 context,
                                 MaterialPageRoute(
-                                    builder: (context) => Dashboard(),
+                                    builder: (context) => IntroLayout(),
                                     fullscreenDialog: true));
                           },
                           child: Align(
