@@ -5,7 +5,9 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:fluttertoast/fluttertoast.dart';
+import 'package:ftvapp/intropages/intro_layout.dart';
 import 'package:ftvapp/pages/dashboard.dart';
+import 'package:ftvapp/contents/forgetpass.dart';
 import 'package:ftvapp/pages/home_page.dart';
 import 'package:ftvapp/pages/register.dart';
 import 'package:ftvapp/services/auth.dart';
@@ -159,19 +161,25 @@ class _LoginState extends State<Login> {
                 SizedBox(
                   height: 20,
                 ),
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.end,
-                  children: <Widget>[
-                    Text(
-                      "Forgot Password?",
-                      style: TextStyle(
-                        color: Colors.black,
-                        fontWeight: FontWeight.bold,
-                        fontFamily: "Poppins-Medium",
-                        fontSize: ScreenUtil().setSp(30),
-                      ),
-                    )
-                  ],
+                GestureDetector(
+                  onTap: () {
+                    Navigator.push(context, MaterialPageRoute(builder: (_) => ForgetPass()));
+                  },
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.end,
+                    children: <Widget>[
+                      Text(
+                        "Forgot Password?",
+                        style: TextStyle(
+                          color: Colors.black,
+                          fontWeight: FontWeight.bold,
+                          fontFamily: "Poppins-Medium",
+                          fontSize: ScreenUtil().setSp(30),
+                          decoration: TextDecoration.underline,
+                        ),
+                      )
+                    ],
+                  ),
                 ),
                 SizedBox(
                   height: ScreenUtil().setHeight(35),
@@ -323,7 +331,7 @@ class _LoginState extends State<Login> {
         // sign up
         setState(() {
           isLoading = false;
-        });
+        });å
         Fluttertoast.showToast(msg: "Login Success");
         Navigator.pushAndRemoveUntil(context, MaterialPageRoute(builder: (_) => Dashboard()), (Route<dynamic> route) => false);
       }).catchError((onError) {
