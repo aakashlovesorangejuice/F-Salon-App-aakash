@@ -53,7 +53,7 @@ class _RegisterState extends State<Register> {
   Widget build(BuildContext context) {
     ScreenUtil.init(width: 750, height: 1334, allowFontScaling: true);
     return Scaffold(
-      resizeToAvoidBottomPadding: true,
+      resizeToAvoidBottomPadding: false,
       body: Container(
         width: double.infinity,
         decoration: BoxDecoration(
